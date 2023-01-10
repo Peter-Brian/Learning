@@ -1,0 +1,18 @@
+//For example, you might use JavaScript to check that an email address is in the correct format, or that a password is at least a certain length.
+
+
+function validateForm() {
+  // Get all the inputs in the form
+  var inputs = document.querySelectorAll("input");
+
+  // Loop through the inputs and check for errors
+  for (var i = 0; i < inputs.length; i++) {
+    if (inputs[i].value === "") {
+      alert("Please fill out all fields.");
+      return false;
+    }
+  }
+
+  // No errors were found, so the form can be submitted
+  return true;
+}
