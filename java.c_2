@@ -1,0 +1,19 @@
+//For example, you might use JavaScript to make an element move across the screen or to make a button change color when it's hovered over.
+
+// Select the element you want to animate
+var element = document.querySelector(".animated-element");
+
+// Set the initial position
+element.style.left = "0px";
+
+// Create a function to move the element
+function moveElement() {
+  // Update the position
+  element.style.left = (element.offsetLeft + 10) + "px";
+
+  // Repeat the animation
+  requestAnimationFrame(moveElement);
+}
+
+// Start the animation
+moveElement();
