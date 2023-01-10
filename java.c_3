@@ -1,0 +1,17 @@
+For example, you might use JavaScript to show a tooltip when a user hovers over a button.
+
+// Select the button
+var button = document.querySelector("button");
+
+// Add an event listener to the button
+button.addEventListener("mouseenter", function() {
+  // Show the tooltip
+  var tooltip = document.querySelector(".tooltip");
+  tooltip.style.display = "block";
+});
+
+button.addEventListener("mouseleave", function() {
+  // Hide the tooltip
+  var tooltip = document.querySelector(".tooltip");
+  tooltip.style.display = "none";
+});
